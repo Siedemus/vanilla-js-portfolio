@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --font-main: "Inter", sans-serif;
+
+  --primary: #ffffff;
+  --secondary: #d7d7d7;
+  --contrast: #000000;
+  --accent: #a6acb8;
+
+  --main-shadow: var(--accent) 0px 2px 8px 0px;
+}
+
+.body {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--secondary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 15px;
+  color: var(--contrast);
+  background-color: var(--primary);
+  margin: 5px 5px 20px;
+  border-radius: 10px;
+  box-shadow: var(--main-shadow);
+}
+
+@media (max-width: 360px) {
+  .header {
+    padding: 0 8px;
+  }
+}
+
+.header__heading {
+  font-family: var(--font-main);
+  font-size: 25px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__item {
+  border-radius: 25%;
+  padding: 3px;
+  transition: 0.2s;
+}
+
+.navigation__item:hover {
+  background-color: var(--secondary);
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: var(--contrast);
+}
+
+.navigation__icon {
+  font-size: 20px;
+}
