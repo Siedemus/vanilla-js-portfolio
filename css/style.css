@@ -14,9 +14,18 @@ html {
   --font-main: "Inter", sans-serif;
 
   --primary: #ffffff;
-  --secondary: #d7d7d7;
+  --secondary: #e6e4e4;
   --contrast: #000000;
-  --accent: #a6acb8;
+  --secondary-contrast: #4a4a4a;
+  --accent: #b5b7bc;
+  --badge: #13dba94b;
+  --badge-contrast: #0fab84;
+  --html: #ff602f;
+  --css: #264de4;
+  --js: #f0db4f;
+  --node: #3c873a;
+  --react: #61dafb;
+  --figma: #a802f5;
 
   --main-shadow: var(--accent) 0px 2px 8px 0px;
 }
@@ -25,6 +34,7 @@ html {
   max-width: 500px;
   margin: 0 auto;
   background-color: var(--secondary);
+  font-family: var(--font-main);
 }
 
 .header {
@@ -34,7 +44,7 @@ html {
   padding: 0 15px;
   color: var(--contrast);
   background-color: var(--primary);
-  margin: 5px 5px 20px;
+  margin: 5px 5px 15px;
   border-radius: 10px;
   box-shadow: var(--main-shadow);
 }
@@ -46,7 +56,6 @@ html {
 }
 
 .header__heading {
-  font-family: var(--font-main);
   font-size: 25px;
 }
 

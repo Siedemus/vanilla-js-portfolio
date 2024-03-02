@@ -1,2 +1,313 @@
 @import url(./style.css);
 
+.main {
+  padding: 20px 15px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  box-shadow: var(--main-shadow);
+  margin: 5px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__sub-heading {
+  margin: 0;
+  font-size: 15px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.sub-heading__icon {
+  color: var(--accent);
+  transition: all 1s ease-in-out;
+}
+
+.section__sub-heading:hover .sub-heading__icon {
+  rotate: -270deg;
+  color: var(--contarst);
+}
+
+.section__badge {
+  background-color: var(--badge);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--badge-contrast);
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+}
+
+.section__badge:hover {
+  filter: brightness(1.3);
+}
+
+.sub-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 435px) {
+  .sub-section {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+}
+
+.sub-section__description {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.description__heading {
+  margin: 0;
+  font-size: 25px;
+}
+
+.description__text {
+  margin: 0;
+  max-width: 280px;
+}
+
+.profile {
+  max-width: 164px;
+  border-radius: 50%;
+  padding: 5px;
+  border: dotted 5px var(--secondary);
+  transition: all 1s ease-in-out;
+}
+
+.description__container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container__github {
+  text-decoration: none;
+  color: var(--primary);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--contrast);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  box-shadow: var(--main-shadow);
+}
+
+.container__github:hover {
+  background-color: var(--secondary-contrast);
+}
+
+.container__email {
+  text-decoration: none;
+  color: var(--contrast);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 1px solid var(--secondary);
+  box-shadow: var(--main-shadow);
+  cursor: pointer;
+}
+
+.container__email:hover {
+  background-color: var(--secondary);
+}
+
+.succes {
+  background-color: var(--badge);
+}
+
+.succes.container__email:hover {
+  background-color: var(--badge);
+}
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--primary) 45px,
+    var(--primary) 80%,
+    transparent
+  );
+}
+
+@keyframes animation {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-track {
+  animation: animation 8s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.slide {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+.fa-brands {
+  transition: 0.5s;
+}
+
+.fa-html5:hover {
+  color: var(--html);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.fa-css3-alt:hover {
+  color: var(--css);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.fa-js:hover {
+  color: var(--js);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.fa-node-js:hover {
+  color: var(--node);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.fa-react:hover {
+  color: var(--react);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.fa-figma:hover {
+  color: var(--figma);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.projects-section {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__sub-heading--projects {
+  margin-top: 5px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  gap: 15px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.5s;
+}
+
+.project__icon {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  box-shadow: var(--main-shadow);
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.project__icon.fa-earth-americas {
+  color: var(--figma);
+}
+
+.project__icon.fa-film {
+  color: var(--html);
+}
+
+.project__icon.fa-clipboard-check {
+  color: var(--badge-contrast);
+}
+
+.project__desciprtion {
+  font-size: 14px;
+}
+
+.project__heading {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.project__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.project__link-icon {
+  justify-self: flex-end;
+}
+
+.project:hover {
+  cursor: pointer;
+  box-shadow: var(--main-shadow);
+}
+
+.project:hover .project__icon {
+  transform: scale(1.15);
+}
+
+.projects-section__link {
+  color: var(--contrast);
+  text-decoration: none;
+}
