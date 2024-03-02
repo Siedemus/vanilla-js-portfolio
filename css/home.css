@@ -1,13 +1,5 @@
 @import url(./style.css);
 
-.main {
-  padding: 20px 15px;
-  background-color: var(--primary);
-  border-radius: 10px;
-  box-shadow: var(--main-shadow);
-  margin: 5px;
-}
-
 .section {
   display: flex;
   align-items: center;
@@ -87,14 +79,6 @@
 .description__text {
   margin: 0;
   max-width: 280px;
-}
-
-.profile {
-  max-width: 164px;
-  border-radius: 50%;
-  padding: 5px;
-  border: dotted 5px var(--secondary);
-  transition: all 1s ease-in-out;
 }
 
 .description__container {
