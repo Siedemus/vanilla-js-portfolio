@@ -74,21 +74,26 @@ html {
 
 .navigation__item {
   border-radius: 25%;
-  padding: 3px;
+  padding: 4px;
   transition: 0.2s;
+}
+
+.navigation__icon {
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 .navigation__item:hover {
   background-color: var(--secondary);
 }
 
-.navigation__link {
-  text-decoration: none;
+.navigation__item:hover .navigation__icon {
   color: var(--contrast);
-}
-
-.navigation__icon {
-  font-size: 20px;
 }
 
 .main {

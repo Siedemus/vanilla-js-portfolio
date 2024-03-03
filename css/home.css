@@ -86,6 +86,7 @@
   gap: 5px;
   align-items: center;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .container__github {
