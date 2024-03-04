@@ -241,30 +241,6 @@
   transition: 0.5s;
 }
 
-.project__icon {
-  font-size: 25px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: var(--primary);
-  border: 1px solid var(--secondary);
-  box-shadow: var(--main-shadow);
-  transition: 0.5s;
-  cursor: pointer;
-  text-align: center;
-}
-
-.project__icon.fa-earth-americas {
-  color: var(--figma);
-}
-
-.project__icon.fa-film {
-  color: var(--html);
-}
-
-.project__icon.fa-clipboard-check {
-  color: var(--badge-contrast);
-}
-
 .project__desciprtion {
   font-size: 14px;
 }

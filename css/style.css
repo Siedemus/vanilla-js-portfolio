@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Pacifico&display=swap");
 
 html {
   box-sizing: border-box;
@@ -13,6 +13,7 @@ html {
 :root {
   --font-main: "Inter", sans-serif;
   --font-secondary: "Jacquarda Bastarda 9", serif;
+  --font-cosmetic: "Pacifico", sans-serif;
 
   --primary: #ffffff;
   --secondary: #e6e4e4;
@@ -29,6 +30,13 @@ html {
   --figma: #a802f5;
 
   --main-shadow: var(--accent) 0px 2px 8px 0px;
+
+  --primary-gradient: linear-gradient(
+    90deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(254, 14, 164, 1) 50%,
+    rgba(255, 182, 45, 1) 100%
+  );
 }
 
 .body {
@@ -109,4 +117,34 @@ html {
   border-radius: 50%;
   padding: 5px;
   border: dotted 5px var(--secondary);
+}
+
+.project__icon {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  box-shadow: var(--main-shadow);
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+}
+
+.project__icon--active {
+  background-color: var(--secondary);
+}
+
+.project__icon.fa-earth-americas {
+  color: var(--figma);
+}
+
+.project__icon.fa-film {
+  color: var(--html);
+}
+
+.project__icon.fa-clipboard-check {
+  color: var(--badge-contrast);
 }

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/05b724fab0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/work.css" />
+    <script defer src="./js/work.js"></script>
+    <title>Portfolio - Work</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__heading">Portfolio</h1>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html"
+              ><i class="fa-solid fa-house navigation__icon"></i
+            ></a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="about.html"
+              ><i class="fa-solid fa-address-card navigation__icon"></i
+            ></a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="work.html"
+              ><i class="fa-solid fa-briefcase navigation__icon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="work-article">
+        <section class="work-section">
+          <h2 class="work-section__sub-heading">
+            Some of my
+            <span class="sub-heading__cosmetic">wonderful</span> projects
+          </h2>
+          <ul class="work-section__work-list">
+            <li class="work-list__item">
+              <label>
+                <input
+                  class="item__input js-input"
+                  type="radio"
+                  name="projects"
+                  value="0"
+                />
+                <span
+                  ><i
+                    class="project__icon js-icon fa-solid fa-earth-americas"
+                  ></i
+                ></span>
+              </label>
+            </li>
+            <li class="work-list__item">
+              <label>
+                <input
+                  class="item__input js-input"
+                  type="radio"
+                  name="projects"
+                  value="1"
+                />
+                <span
+                  ><i class="project__icon js-icon fa-solid fa-film"></i
+                ></span>
+              </label>
+            </li>
+            <li class="work-list__item">
+              <label>
+                <input
+                  class="item__input js-input"
+                  type="radio"
+                  name="projects"
+                  value="2"
+                />
+                <span
+                  ><i
+                    class="project__icon js-icon fa-solid fa-clipboard-check"
+                  ></i
+                ></span>
+              </label>
+            </li>
+          </ul>
+          <article class="project js-project">
+            <h3 class="project__heading">Countries List</h3>
+            <div class="project__container">
+              <p class="container__heading">Technologies:</p>
+              <p class="container_text">
+                HTML, CSS, JS, React, Styled-Components, Redux, Redux-Saga
+              </p>
+            </div>
+            <div class="project__image-container">
+              <img
+                class="image-container__image"
+                src="images/countries-api-list-ss.png"
+                alt="Countries List"
+              />
+            </div>
+            <p class="project__description">
+              Simple app to find a country. It uses the REST Countries API to
+              fetch data. You can search for a country by name. You can also
+              filter the countries by region. The app is fully responsive and
+              has a dark mode.
+            </p>
+            <p class="project__live-container">
+              Wanna try?
+              <a
+                class="live-container__link"
+                href="https://siedemus.github.io/countries-api-list/"
+                target="_blank"
+              >
+                Live preview <i class="fa-solid fa-link"></i>
+              </a>
+            </p>
+          </article>
+          <article class="project js-project">
+            <h3 class="project__heading">Movies List</h3>
+            <div class="project__container">
+              <p class="container__heading">Technologies:</p>
+              <p class="container_text">
+                HTML, CSS, JS, React, Styled-Components, Redux, Redux-Saga
+              </p>
+            </div>
+            <div class="project__image-container">
+              <img
+                class="image-container__image"
+                src="images/movies-list-ss.gif"
+                alt="movie list image"
+              />
+            </div>
+            <p class="project__description">
+              Simple app to find a movie. It uses the TMDb API to fetch data.
+              You can search for a movie and actor by name. You can also filter
+              the movies by genre. The app is fully responsive. (Project made in cooperation with a friends)
+            </p>
+            <p class="project__live-container">
+              Wanna try?
+              <a
+                class="live-container__link"
+                href="https://siedemus.github.io/movies-browser/"
+                target="_blank"
+              >
+                Live preview <i class="fa-solid fa-link"></i>
+              </a>
+            </p>
+          </article>
+          <article class="project js-project">
+            <h3 class="project__heading">Task List</h3>
+            <div class="project__container">
+              <p class="container__heading">Technologies:</p>
+              <p class="container_text">
+                HTML, CSS, JS, React, Styled-Components, Redux, Redux-Saga
+              </p>
+            </div>
+            <div class="project__image-container">
+              <img
+                class="image-container__image"
+                src="images/task-list-ss.gif"
+                alt="Countries List"
+              />
+            </div>
+            <p class="project__description">
+              Simple app to manage your tasks. You can add, delete, and mark as
+              done. The app is fully responsive and has a dark mode. Psst, you
+              should done all your tasks!
+            </p>
+            <p class="project__live-container">
+              Wanna try?
+              <a
+                class="live-container__link"
+                href="https://siedemus.github.io/to-do-list-react/"
+                target="_blank"
+              >
+                Live preview <i class="fa-solid fa-link"></i>
+              </a>
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
